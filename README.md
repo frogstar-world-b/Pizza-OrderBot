@@ -38,6 +38,14 @@ OrderBot is an interactive chatbot designed to assist customers in placing order
    openai.api_key = os.getenv("OPENAI_API_KEY")
    ```
 
+## Example Chat
+![Example chat output](chat_screenshot.png)
+
+
 ## Credit
-[Youtube tutorial](https://youtu.be/kN_3CZ-iE1c?si=6zvoySMg1PKNRAow) by Isa Fulford and Andrew Ng.
+The code is inspired by [Youtube tutorial](https://youtu.be/kN_3CZ-iE1c?si=6zvoySMg1PKNRAow) by Isa Fulford and Andrew Ng. 
+
+I made modifications:
+- Updated the `get_completion_from_messages` function to use `openai.chat.completions.create`
+- The conversation history now displays above the chat box, in the style of ChatGPT web interface.
 
